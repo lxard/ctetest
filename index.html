@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join COTE Clan</title>
+  <link rel="icon" type="image/jpeg" href="https://files.catbox.moe/w07fms.jpeg" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: url('https://files.catbox.moe/g369eq.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+
+    .shine {
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      width: 300%;
+      height: 300%;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+      animation: shine 4s infinite linear;
+      z-index: 0;
+    }
+
+    @keyframes shine {
+      0% { transform: translate(-100%, -100%) rotate(45deg); }
+      100% { transform: translate(100%, 100%) rotate(45deg); }
+    }
+
+    .welcome-message {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .btn {
+      padding: 14px 24px;
+      background: #8b5cf6;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: 0.3s;
+      border: 2px solid #fff;
+    }
+
+    .btn:hover {
+      background: #c084fc;
+      transform: scale(1.05);
+    }
+
+    #main-content {
+      display: none;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
+      padding: 30px;
+      border-radius: 16px;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+
+    .logo {
+      width: 140px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    .collapsible {
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+      cursor: pointer;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      text-align: left;
+      margin-top: 20px;
+      font-weight: 600;
+      border-left: 3px solid #c084fc;
+    }
+
+    .content {
+      padding: 0 14px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      text-align: left;
+      font-size: 0.95em;
+      color: #e0e0e0;
+    }
+
+    .content.open {
+      padding: 14px;
+      max-height: 1000px;
+    }
+
+    .btn-group {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.8em;
+      color: #cbd5e1;
+    }
+
+    ul {
+      text-align: left;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="shine"></div>
+
+<div class="welcome-message" id="welcome">
+  <h1>👑 Classroom Of The Ellite</h1>
+  <p>Selamat datang di COTE Clan, komunitas elite yang solid!</p>
+  <button class="btn" onclick="enterSite()">Masuk ke Clan</button>
+</div>
+
+<div id="main-content">
+  <img src="https://files.catbox.moe/1r4to9.jpeg" alt="COTE Logo" class="logo" />
+  <h1>COTE Clan</h1>
+  <p>Selamat datang di <strong>Classroom Of The Ellite</strong>, tempat berkumpulnya para elite dunia!</p>
+
+  <button class="collapsible">📜 Peraturan Clan</button>
+  <div class="content">
+    <p><strong>There are several rules that must be obeyed in COTE:</strong></p>
+    <ul>
+      <li>Good Attitude (utamakan)</li>
+      <li>Toleransi</li>
+      <li>Sopan Santun</li>
+      <li>No Drama</li>
+      <li>No Rasist</li>
+      <li>No Baper</li>
+      <li>No Bullying</li>
+      <li>No Spam STC</li>
+      <li>No Kirim STC/Video 18+ (directly kick)</li>
+      <li>No Ribut</li>
+      <li>No Spam Tag Grup Ke Status (directly kick)</li>
+      <li>No Gaduh</li>
+      <li>No Share Link Marga Lain</li>
+      <li>No DB Marga</li>
+      <li>No STC Jomok</li>
+      <li>No Bot</li>
+      <li>No Hytamkan Waifu admin/member lain (directly kick)</li>
+      <li>No Bucin di sini</li>
+      <li>Must CN</li>
+      <li>Minimal Nimbrung</li>
+      <li>Ga on 2/3H (opsional)</li>
+      <li>Toxic Sewajarnya</li>
+    </ul>
+  </div>
+
+  <div class="btn-group">
+    <a href="https://chat.whatsapp.com/YOUR_INVITE_LINK" class="btn" target="_blank">🚀 Gabung WhatsApp</a>
+    <a href="https://wa.me/YOUR_NUMBER" class="btn" target="_blank">💬 Hubungi Admin</a>
+  </div>
+
+  <footer>
+    © 2025 COTE Clan. All rights reserved.
+  </footer>
+</div>
+
+<script>
+  function enterSite() {
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+  }
+
+  const collapsibles = document.querySelectorAll('.collapsible');
+  collapsibles.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.nextElementSibling.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
